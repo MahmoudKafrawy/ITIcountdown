@@ -5,7 +5,13 @@ const node = document.createElement("div");
 const mabrook = document.createElement("div");
 
 const newDate = new Date("jul 27 22 15:30:59").getTime();
-const countdown = setInterval(() => {
+
+setTimeout(() => {
+  console.log("hi");
+  window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+}, 2000);
+
+(function app() {
   const date = new Date().getTime();
   const diff = newDate - date;
   dashCounter = diff / 100000;
@@ -37,4 +43,8 @@ const countdown = setInterval(() => {
     clearInterval(countdown);
     document.querySelector(".countdown").innerHTML = "مبروووووك";
   }
+})();
+
+const countdown = setInterval(() => {
+  app();
 }, 1000);

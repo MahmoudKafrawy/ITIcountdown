@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+    color: #2C4A64;
+}
+body{
+    height: 100vh;
+    background-color: rgb(247, 247, 247);
+}
+.main{
+  margin-bottom: 20px;
+}
+.hidden{
+  display: none;
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#dash{
+    height: fit-content;
+    direction: rtl;
+}
+.text{
+    width: 295px;
+    word-wrap: break-word;
+    direction: rtl;
+    
+}
+
+h1{
+  text-align: center;
+  font-weight: 400;
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+.countdown{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.countdown > div{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.25);
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+.number {
+  font-weight: 500;
+  font-size: 44px;
+  color: #CAA78C;
+}
+
+div span:last-of-type{
+  font-size: 12px;
+}
+
+@media screen and (max-width:600px){
+  h1{
+    font-size: 40px;
+  }
+  .countdown{
+    gap: 10px;
+  }
+  .countdown > div{
+  width: 60px;
+  height: 80px;
+  background-color: white;
+}
+  
+  .number {
+  font-size: 34px;
+}
+}

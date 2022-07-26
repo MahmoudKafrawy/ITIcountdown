@@ -11,7 +11,7 @@ setTimeout(() => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 }, 2000);
 
-(function app() {
+const countdown = setInterval(() => {
   const date = new Date().getTime();
   const diff = newDate - date;
   dashCounter = diff / 100000;
@@ -43,8 +43,4 @@ setTimeout(() => {
     clearInterval(countdown);
     document.querySelector(".countdown").innerHTML = "مبروووووك";
   }
-})();
-
-const countdown = setInterval(() => {
-  app();
 }, 1000);

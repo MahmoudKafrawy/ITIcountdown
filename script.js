@@ -14,7 +14,7 @@ setTimeout(() => {
 const countdown = setInterval(() => {
   const date = new Date().getTime();
   const diff = newDate - date;
-  dashCounter = diff / 100000;
+  dashCounter = Math.floor(diff / 200000);
   var a = "ـ";
   node.innerText = a.repeat(dashCounter);
   mabrook.innerText = "روح ابدأ في البروجكت 😜";

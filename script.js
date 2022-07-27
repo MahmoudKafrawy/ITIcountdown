@@ -4,7 +4,7 @@ const nt = document.getElementById("nt");
 const node = document.createElement("div");
 const mabrook = document.createElement("div");
 
-const newDate = new Date("jul 27 22 15:30:59").getTime();
+const newDate = new Date("jul 28 22 15:30:59").getTime();
 
 setTimeout(() => {
   console.log("hi");
